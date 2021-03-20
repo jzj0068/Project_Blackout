@@ -1,49 +1,49 @@
 fileFormatVersion: 2
-guid: d291779e23bf9004f9d6704fa45b980d
+guid: f728c7a9ef6829240bfbbcdcc200b72a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7086230957937663881
-    second: AgentSprite-Sheet (2)_0
+      213: -8825167846234910574
+    second: AgentSprite-Sheet version2_0
   - first:
-      213: -2273702834103332939
-    second: AgentSprite-Sheet (2)_1
+      213: 6067929158584825444
+    second: AgentSprite-Sheet version2_1
   - first:
-      213: -7640785903615003643
-    second: AgentSprite-Sheet (2)_2
+      213: -5026453541943636157
+    second: AgentSprite-Sheet version2_2
   - first:
-      213: -3984636421100000651
-    second: AgentSprite-Sheet (2)_3
+      213: 1918106315713032125
+    second: AgentSprite-Sheet version2_3
   - first:
-      213: 2798073038996472826
-    second: AgentSprite-Sheet (2)_4
+      213: 5561846178815118865
+    second: AgentSprite-Sheet version2_4
   - first:
-      213: 710035470011776383
-    second: AgentSprite-Sheet (2)_5
+      213: -7236257805435889433
+    second: AgentSprite-Sheet version2_5
   - first:
-      213: 5763893833530613094
-    second: AgentSprite-Sheet (2)_6
+      213: 4900779640337863297
+    second: AgentSprite-Sheet version2_6
   - first:
-      213: 2794976227735451292
-    second: AgentSprite-Sheet (2)_7
+      213: 512048711315290368
+    second: AgentSprite-Sheet version2_7
   - first:
-      213: 899819248863344447
-    second: AgentSprite-Sheet (2)_8
+      213: -567648863067405882
+    second: AgentSprite-Sheet version2_8
   - first:
-      213: -7377800576812684689
-    second: AgentSprite-Sheet (2)_9
+      213: -4224993389619405767
+    second: AgentSprite-Sheet version2_9
   - first:
-      213: 9193169009054632971
-    second: AgentSprite-Sheet (2)_10
+      213: -6565642714038320350
+    second: AgentSprite-Sheet version2_10
   - first:
-      213: 1043244192925974745
-    second: AgentSprite-Sheet (2)_11
+      213: 1744917185182836806
+    second: AgentSprite-Sheet version2_11
   - first:
-      213: -3193619253565648834
-    second: AgentSprite-Sheet (2)_12
+      213: 4302805537009068038
+    second: AgentSprite-Sheet version2_12
   - first:
-      213: -3343071529695973338
-    second: AgentSprite-Sheet (2)_13
+      213: -9019976469153781864
+    second: AgentSprite-Sheet version2_13
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -106,7 +106,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -118,7 +118,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -130,7 +130,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -141,7 +141,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AgentSprite-Sheet (2)_0
+      name: AgentSprite-Sheet version2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -155,14 +155,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98f10440389575260800000000000000
-      internalID: 7086230957937663881
+      spriteID: 29018f10a94b68580800000000000000
+      internalID: -8825167846234910574
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AgentSprite-Sheet (2)_1
+      name: AgentSprite-Sheet version2_1
       rect:
         serializedVersion: 2
         x: 16
@@ -176,14 +176,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5bfc878a15f2270e0800000000000000
-      internalID: -2273702834103332939
+      spriteID: 466fea3ab6d953450800000000000000
+      internalID: 6067929158584825444
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AgentSprite-Sheet (2)_2
+      name: AgentSprite-Sheet version2_2
       rect:
         serializedVersion: 2
         x: 32
@@ -197,14 +197,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 504373a04b976f590800000000000000
-      internalID: -7640785903615003643
+      spriteID: 34f027882237e3ab0800000000000000
+      internalID: -5026453541943636157
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AgentSprite-Sheet (2)_3
+      name: AgentSprite-Sheet version2_3
       rect:
         serializedVersion: 2
         x: 48
@@ -218,14 +218,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57a2049594ab3b8c0800000000000000
-      internalID: -3984636421100000651
+      spriteID: dbf2285188b7e9a10800000000000000
+      internalID: 1918106315713032125
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AgentSprite-Sheet (2)_4
+      name: AgentSprite-Sheet version2_4
       rect:
         serializedVersion: 2
         x: 64
@@ -239,14 +239,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af38bf8aa90c4d620800000000000000
-      internalID: 2798073038996472826
+      spriteID: 11e83a7b1a5af2d40800000000000000
+      internalID: 5561846178815118865
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AgentSprite-Sheet (2)_5
+      name: AgentSprite-Sheet version2_5
       rect:
         serializedVersion: 2
         x: 80
@@ -260,14 +260,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7dbaff7f7d8ad900800000000000000
-      internalID: 710035470011776383
+      spriteID: 7e898d38dd5a39b90800000000000000
+      internalID: -7236257805435889433
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AgentSprite-Sheet (2)_6
+      name: AgentSprite-Sheet version2_6
       rect:
         serializedVersion: 2
         x: 96
@@ -281,14 +281,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66d18a637e67dff40800000000000000
-      internalID: 5763893833530613094
+      spriteID: 1821ec01e11130440800000000000000
+      internalID: 4900779640337863297
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AgentSprite-Sheet (2)_7
+      name: AgentSprite-Sheet version2_7
       rect:
         serializedVersion: 2
         x: 112
@@ -302,14 +302,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9635d91210c9c620800000000000000
-      internalID: 2794976227735451292
+      spriteID: 009f4a907992b1700800000000000000
+      internalID: 512048711315290368
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AgentSprite-Sheet (2)_8
+      name: AgentSprite-Sheet version2_8
       rect:
         serializedVersion: 2
         x: 128
@@ -323,14 +323,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f37fe82e6dccc7c00800000000000000
-      internalID: 899819248863344447
+      spriteID: 6c186b7dd5e4f18f0800000000000000
+      internalID: -567648863067405882
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AgentSprite-Sheet (2)_9
+      name: AgentSprite-Sheet version2_9
       rect:
         serializedVersion: 2
         x: 144
@@ -344,14 +344,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6a6863f679cc9990800000000000000
-      internalID: -7377800576812684689
+      spriteID: 93c9c59a5eecd55c0800000000000000
+      internalID: -4224993389619405767
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AgentSprite-Sheet (2)_10
+      name: AgentSprite-Sheet version2_10
       rect:
         serializedVersion: 2
         x: 160
@@ -365,14 +365,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0cc4d89182b49f70800000000000000
-      internalID: 9193169009054632971
+      spriteID: 2234d93ecb622e4a0800000000000000
+      internalID: -6565642714038320350
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AgentSprite-Sheet (2)_11
+      name: AgentSprite-Sheet version2_11
       rect:
         serializedVersion: 2
         x: 176
@@ -386,14 +386,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d0875de0195a7e00800000000000000
-      internalID: 1043244192925974745
+      spriteID: 6482c495fe0373810800000000000000
+      internalID: 1744917185182836806
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AgentSprite-Sheet (2)_12
+      name: AgentSprite-Sheet version2_12
       rect:
         serializedVersion: 2
         x: 192
@@ -407,14 +407,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e301f5b953cfda3d0800000000000000
-      internalID: -3193619253565648834
+      spriteID: 6086203b6d2a6bb30800000000000000
+      internalID: 4302805537009068038
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AgentSprite-Sheet (2)_13
+      name: AgentSprite-Sheet version2_13
       rect:
         serializedVersion: 2
         x: 208
@@ -428,8 +428,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 620ffb5f7260b91d0800000000000000
-      internalID: -3343071529695973338
+      spriteID: 897e4b1f03b92d280800000000000000
+      internalID: -9019976469153781864
       vertices: []
       indices: 
       edges: []
