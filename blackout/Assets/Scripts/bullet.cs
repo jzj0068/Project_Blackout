@@ -21,9 +21,13 @@ public class bullet : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        if (hitInfo.gameObject.CompareTag("enemy"))
+        if (hitInfo.gameObject.CompareTag("Dummy"))
         {
             hitInfo.GetComponent<Dummy>().TakeDamage(damage);
+        }
+        else if (hitInfo.gameObject.CompareTag("enemy"))
+        {
+            hitInfo.GetComponent<EnemyMovement>().TakeDamage(damage);
         }
 
         Destroy(gameObject);
