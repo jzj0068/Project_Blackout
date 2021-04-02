@@ -2,20 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class fire : MonoBehaviour
+public class knife_attack : MonoBehaviour
 {
-    public Animator fireAni;
+    public Animator knife_ani;
+
     void Start()
     {
         
     }
-    // Update is called once per frame
+
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            fireAni.SetTrigger("Shoot");
+            knife_ani.SetTrigger("Strike");
         }
     }
-
 }
