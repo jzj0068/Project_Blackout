@@ -13,6 +13,11 @@ public class gun_audio : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Aiming();
+
+    }
+    private void Aiming()
+    {
+
     }
 }

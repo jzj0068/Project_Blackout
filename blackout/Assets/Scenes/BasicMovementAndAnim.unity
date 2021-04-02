@@ -6681,7 +6681,6 @@ GameObject:
   m_Component:
   - component: {fileID: 856292713}
   - component: {fileID: 856292712}
-  - component: {fileID: 856292718}
   - component: {fileID: 856292715}
   - component: {fileID: 856292714}
   - component: {fileID: 856292716}
@@ -6775,7 +6774,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 1.2
   rb: {fileID: 856292715}
-  animator: {fileID: 856292716}
+  agent_Animator: {fileID: 856292716}
 --- !u!50 &856292715
 Rigidbody2D:
   serializedVersion: 4
@@ -6842,25 +6841,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.100328445, y: 0.16}
   m_EdgeRadius: 0
---- !u!114 &856292718
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 856292711}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86ccaee878bb87e44812753bd2527464, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weaponSelect: 0
-  wSwitch: {fileID: 0}
-  gunAudio: {fileID: 0}
-  fire_point: {fileID: 1968269250}
-  bulletPrefab: {fileID: 7908838700742878222, guid: fdc9d87e4840b2b498e0cd1ca5402354,
-    type: 3}
-  weaponChange: 
 --- !u!1001 &862400474
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10397,12 +10377,12 @@ PrefabInstance:
     - target: {fileID: 1140262599677585198, guid: eeb6601c235d4fe41879de3e4e91b034,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.09700012
+      value: 0.095
       objectReference: {fileID: 0}
     - target: {fileID: 1140262599677585198, guid: eeb6601c235d4fe41879de3e4e91b034,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.31499994
+      value: 0.309
       objectReference: {fileID: 0}
     - target: {fileID: 1140262599677585198, guid: eeb6601c235d4fe41879de3e4e91b034,
         type: 3}

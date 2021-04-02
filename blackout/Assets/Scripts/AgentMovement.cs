@@ -7,19 +7,26 @@ public class AgentMovement : MonoBehaviour
     public float moveSpeed = 5.0f;
     public Rigidbody2D rb;
     Vector2 movement;
-    public Animator animator;
+    public Animator agent_Animator;
     // Update is called once per frame
     void Update()
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
-        animator.SetFloat("Horizontal", movement.x);
-        animator.SetFloat("Vertical", movement.y);
-        animator.SetFloat("speed", movement.sqrMagnitude);
+        agent_Animator.SetFloat("Horizontal", movement.x);
+        agent_Animator.SetFloat("Vertical", movement.y);
+        agent_Animator.SetFloat("speed", movement.sqrMagnitude);
+        if ((movement.x == 1) || (movement.x == -1) || (movement.y == 1) || (movement.y == -1))
+        {
+            agent_Animator.SetFloat("lastX", movement.x);
+            agent_Animator.SetFloat("lastY", movement.y);
+        }
+
 
     }
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+
     }
 }
