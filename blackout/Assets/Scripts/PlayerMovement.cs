@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
     Vector2 movement;
     public Animator agent_Animator;
-  
+    public int cards = 0;
 
     // Update is called once per frame
     void Update()

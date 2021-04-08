@@ -5,9 +5,11 @@ using UnityEngine;
 public class keycard : MonoBehaviour
 {
     // Start is called before the first frame update
+    public GameObject myPlayer;
+    public int keycards = 0;
     void Start()
     {
-        
+        keycards = myPlayer.GetComponent<PlayerMovement>().cards;
     }
 
     // Update is called once per frame
@@ -19,7 +21,8 @@ public class keycard : MonoBehaviour
     {
         if(player.gameObject.CompareTag("Player"))
         {
-            player.GetComponent<PlayerMovement>();
+            keycards++;
+            myPlayer.GetComponent<PlayerMovement>().cards = keycards;
             Destroy(gameObject);
         }
     }
