@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    public float accelerationTime = 2f;
+    public float accelerationTime = 1f;
     public float maxSpeed = 5f;
     private Vector2 movement;
     private float timeLeft;
+    public int damage = 10;
 
-    public int hitpoints = 9999;
+    public int hitpoints = 100;
 
     public Rigidbody2D rb;
 
@@ -21,6 +22,7 @@ public class EnemyMovement : MonoBehaviour
             movement = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f));
             timeLeft += accelerationTime;
         }
+
     }
 
     void FixedUpdate()

@@ -29,6 +29,10 @@ public class bullet : MonoBehaviour
         {
             hitInfo.GetComponent<EnemyMovement>().TakeDamage(damage);
         }
+        else if (hitInfo.gameObject.CompareTag("EnemyFollow"))
+        {
+            hitInfo.GetComponent<EnemyFollow>().TakeDamage(damage);
+        }
 
         Destroy(gameObject);
 

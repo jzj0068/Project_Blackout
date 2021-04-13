@@ -8,6 +8,7 @@ TagManager:
   - weaponary
   - weapon
   - Dummy
+  - EnemyFollow
   layers:
   - Default
   - TransparentFX
