@@ -9732,6 +9732,7 @@ GameObject:
   - component: {fileID: 1188917688}
   - component: {fileID: 1188917687}
   - component: {fileID: 1188917686}
+  - component: {fileID: 1188917691}
   m_Layer: 0
   m_Name: EnemyType2
   m_TagString: EnemyFollow
@@ -9881,6 +9882,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   kbPower: 100
   kbDuration: 1
+--- !u!95 &1188917691
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188917684}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2853cf34420faa446af88ea20de7d7a6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1191211762
 GameObject:
   m_ObjectHideFlags: 0
@@ -11266,6 +11286,7 @@ GameObject:
   - component: {fileID: 1357143326}
   - component: {fileID: 1357143324}
   - component: {fileID: 1357143325}
+  - component: {fileID: 1357143327}
   m_Layer: 0
   m_Name: EnemyType1
   m_TagString: enemy
@@ -11416,6 +11437,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   kbPower: 100
   kbDuration: 1
+--- !u!95 &1357143327
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357143320}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3e09cd0720e9d29479c5c0980bd824a7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1360525637
 PrefabInstance:
   m_ObjectHideFlags: 0
