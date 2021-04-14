@@ -5,7 +5,7 @@ using UnityEngine;
 public class knife_attack : MonoBehaviour
 {
     public Animator knife_ani;
-    public int damage = 3;
+    public int damage = 30;
     void Start()
     {
 
@@ -24,6 +24,16 @@ public class knife_attack : MonoBehaviour
         {
             hitInfo.GetComponent<Dummy>().TakeDamage(damage);
             
+        }
+        if ((hitInfo.gameObject.CompareTag("enemy")))
+        {
+            hitInfo.GetComponent<EnemyMovement>().TakeDamage(damage);
+
+        }
+        if ((hitInfo.gameObject.CompareTag("EnemyFollow")))
+        {
+            hitInfo.GetComponent<EnemyFollow>().TakeDamage(damage);
+
         }
 
     }

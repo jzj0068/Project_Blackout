@@ -6,13 +6,13 @@ public class EnemyFollow : MonoBehaviour
 {
     public Transform player;
     public float movespeed = 5f;
-    public float pushSpeed = 5f;
     private Rigidbody2D rb, playerRB;
     private Vector2 movement;
     private Vector2 direction;
 
     public int damage = 10;
     public int hitpoints = 100;
+
 
     // Start is called before the first frame update
     void Start()
@@ -48,15 +48,13 @@ public class EnemyFollow : MonoBehaviour
         //dummy_animator.SetTrigger("Hit");
         if (hitpoints <= 0)
         {
-            Destroy(gameObject);
+            Dead();
 
         }
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    void Dead()
     {
-        
-        playerRB = player.gameObject.GetComponent<Rigidbody2D>();
-        rb.AddForce(direction * pushSpeed, ForceMode2D.Impulse);
+        Destroy(gameObject);
     }
+
 }

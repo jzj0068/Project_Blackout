@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public static PlayerMovement instance;
     public float moveSpeed = 5.0f;
     public Rigidbody2D rb;
     Vector2 movement;
     public Animator agent_Animator;
     public int cards = 0;
+    public float knockback;
 
+    private void Awake()
+    {
+        instance = this;
+    }
     // Update is called once per frame
     void Update()
     {
@@ -30,5 +36,17 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+    }
+    public IEnumerator Knockback(float kbDuration, float kbPower, Transform obj)
+    {
+        float timer = 0;
+        while (kbDuration > timer) 
+        {
+            timer += Time.deltaTime;
+            Vector2 kbDirection = (obj.transform.position - this.transform.position).normalized;
+            rb.AddForce(-kbDirection * knockback);
+
+        }
+        yield return 0;
     }
 }
