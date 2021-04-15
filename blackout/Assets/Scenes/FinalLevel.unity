@@ -6051,6 +6051,7 @@ MonoBehaviour:
   rb: {fileID: 1199533638}
   agent_Animator: {fileID: 1199533636}
   cards: 0
+  knockback: 0
 --- !u!50 &1199533638
 Rigidbody2D:
   serializedVersion: 4

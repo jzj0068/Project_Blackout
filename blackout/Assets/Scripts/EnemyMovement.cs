@@ -9,9 +9,10 @@ public class EnemyMovement : MonoBehaviour
     private Vector2 movement;
     private float timeLeft;
     public int damage = 10;
-
+    public Animator enemyAnimator;
     public int hitpoints = 100;
-
+    private float range1; 
+    private float range2;
     public Rigidbody2D rb;
 
     void Update()
@@ -19,8 +20,17 @@ public class EnemyMovement : MonoBehaviour
         timeLeft -= Time.deltaTime;
         if (timeLeft <= 0)
         {
-            movement = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f));
+            range1 = Random.Range(-1f, 1f);
+            range2 = Random.Range(-1f, 1f);
+            movement = new Vector2(range1, range2);
             timeLeft += accelerationTime;
+            enemyAnimator.SetFloat("Horizontal", range1);
+            enemyAnimator.SetFloat("Vertical", range2);
+        }
+        if ((range1 == 1) || (range1 == -1) || (range2 == 1) || (range2 == -1))
+        {
+            enemyAnimator.SetFloat("lastH", movement.x);
+            enemyAnimator.SetFloat("lastV", movement.y);
         }
 
     }

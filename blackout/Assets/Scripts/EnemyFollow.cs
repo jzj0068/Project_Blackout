@@ -9,9 +9,13 @@ public class EnemyFollow : MonoBehaviour
     private Rigidbody2D rb, playerRB;
     private Vector2 movement;
     private Vector2 direction;
-
+    public Animator enemyAnimator;
     public int damage = 10;
     public int hitpoints = 100;
+
+    private Vector2 moving;
+    private float moveX;
+    private float moveY;
 
 
     // Start is called before the first frame update
@@ -24,14 +28,18 @@ public class EnemyFollow : MonoBehaviour
     void Update()
     {
         direction = player.transform.position - transform.position;
-        //float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-
-        //rb.rotation = angle;
         direction.Normalize();
 
         movement = direction;
-
-
+        moveX = direction.x;
+        moveY = direction.y;
+        enemyAnimator.SetFloat("Horizontal", moveX);
+        enemyAnimator.SetFloat("Vertical", moveY);
+        if ((moveX == 1) || (moveX == -1) || (moveY == 1) || (moveY == -1))
+        {
+            enemyAnimator.SetFloat("lastX", moveX);
+            enemyAnimator.SetFloat("lastY", moveY);
+        }
     }
     private void FixedUpdate()
     {
