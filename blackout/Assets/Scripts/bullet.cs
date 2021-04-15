@@ -7,6 +7,8 @@ public class bullet : MonoBehaviour
     public float speed = 20f;
     public Rigidbody2D rb;
     public int damage = 100;
+
+    private int destroyTime = 5;
     //public distance = 50;
     // Start is called before the first frame update
     void Start()
@@ -17,7 +19,7 @@ public class bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        Destroy(gameObject, destroyTime);
     }
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
