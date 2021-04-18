@@ -7,6 +7,8 @@ public class Timer : MonoBehaviour
 {
     public float timevalue = 180;
     public Text timeText;
+    public GameObject gif;
+    public GameObject enemies;
 
     void Update()
     {
@@ -17,8 +19,9 @@ public class Timer : MonoBehaviour
         else
         {
             timevalue = 0;
-            Scene scene = SceneManager.GetActiveScene();
-            SceneManager.LoadScene(scene.name);
+            Destroy(enemies);
+            gif.SetActive(true);
+    
 
         }
         DisplayTime(timevalue);
@@ -35,5 +38,6 @@ public class Timer : MonoBehaviour
         timeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
 
     }
+
 }
 
