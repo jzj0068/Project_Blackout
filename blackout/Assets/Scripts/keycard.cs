@@ -22,7 +22,7 @@ public class keycard : MonoBehaviour
         if(player.gameObject.CompareTag("Player"))
         {
             keycards++;
-            myPlayer.GetComponent<PlayerMovement>().cards = keycards;
+            myPlayer.GetComponent<PlayerMovement>().cards++;
             Destroy(gameObject);
         }
     }
