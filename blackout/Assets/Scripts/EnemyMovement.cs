@@ -29,8 +29,8 @@ public class EnemyMovement : MonoBehaviour
         }
         if ((range1 == 1) || (range1 == -1) || (range2 == 1) || (range2 == -1))
         {
-            enemyAnimator.SetFloat("lastH", movement.x);
-            enemyAnimator.SetFloat("lastV", movement.y);
+            enemyAnimator.SetFloat("lastX", movement.x);
+            enemyAnimator.SetFloat("lastY", movement.y);
         }
 
     }

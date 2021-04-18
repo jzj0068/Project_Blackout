@@ -10,7 +10,7 @@ public class EnemyFollow : MonoBehaviour
     private Vector2 movement;
     private Vector2 direction;
     public Animator enemyAnimator;
-    public int damage = 10;
+    public int damage = 50;
     public int hitpoints = 100;
 
     private Vector2 moving;

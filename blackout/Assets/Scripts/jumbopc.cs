@@ -5,6 +5,7 @@ using UnityEngine;
 public class jumbopc : MonoBehaviour
 {
     public GameObject myPlayer;
+    public GameObject bomb;
     public GameObject transitionDoor;
     public bool haveCard = false;
     public bool triggerCard;
@@ -22,6 +23,7 @@ public class jumbopc : MonoBehaviour
         if (haveCard == true)
         {
             transitionDoor.GetComponent<Collider2D>().isTrigger = true;
+            Destroy(bomb);
         }
     }
     void OnCollisionEnter2D(Collision2D cardholder)

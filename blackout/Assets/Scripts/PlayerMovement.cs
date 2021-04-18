@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -11,14 +12,16 @@ public class PlayerMovement : MonoBehaviour
     public Animator agent_Animator;
     public int cards = 0;
     public float knockback;
-
+    public int hitpoints = 100;
+    public int damage = 25;
     private void Awake()
     {
-        instance = this;
+        
     }
     // Update is called once per frame
     void Update()
     {
+        instance = this;
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
         agent_Animator.SetFloat("Horizontal", movement.x);
@@ -29,14 +32,28 @@ public class PlayerMovement : MonoBehaviour
             agent_Animator.SetFloat("lastX", movement.x);
             agent_Animator.SetFloat("lastY", movement.y);
         }
-
-
-
     }
+
+    public void TakeDamage(int damage)
+    {
+        hitpoints -= damage;
+        if (hitpoints <= 0)
+        {
+            Dead();
+        }
+    }
+
+    void Dead()
+    {
+        Scene scene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
+    }
+
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
+
     public IEnumerator Knockback(float kbDuration, float kbPower, Transform obj)
     {
         float timer = 0;
