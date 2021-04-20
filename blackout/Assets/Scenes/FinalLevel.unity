@@ -13563,7 +13563,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70bc0d14c450c8749aa92f2a6b221ca8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timevalue: 120
+  timevalue: 180
   timeText: {fileID: 1274767585}
   gif: {fileID: 257743768}
   enemies: {fileID: 1520673844}
